@@ -11,7 +11,7 @@ const popupCheck = () => {
         event.preventDefault();
         let target = event.target;
 
-        if (target.matches(checkBtn)) {
+        if (target === checkBtn) {
             const popupCheck = document.querySelector('.popup-check');
             popupCheck.style.display = 'block';
 
