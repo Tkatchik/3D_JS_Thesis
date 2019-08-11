@@ -7,6 +7,7 @@ import popupDiscount from './modules/popupDiscount';
 import popupCall from './modules/popupCall';
 import popupCheck from './modules/popupCheck';
 import moreBtn from './modules/moreBtn';
+import accordion from './modules/accordion';
 
 
 popupConsult();
@@ -16,3 +17,4 @@ popupDiscount();
 popupCall();
 popupCheck();
 moreBtn();
+accordion();
