@@ -1,13 +1,13 @@
 const moreBtn = () => {
-    let moreBtn = document.querySelector('.sentence');
-    moreBtn.addEventListener('click', (event) => {
+    const moreBtn = document.querySelector('.add-sentence-btn'),
+        hidden = document.querySelectorAll('.hidden');
 
-        let target = event.target;
+    moreBtn.addEventListener('click', () => {
+        hidden.forEach(item => {
+            item.classList.remove('hidden');
+        });
 
-        if (target.matches('.add-sentence-btn')) {
-            const shadowBlock = document.querySelectorAll('.shadow-block');
-            shadowBlock.style.display = 'block';
-        };
+        moreBtn.style.display = 'none';
     });
 };
 
