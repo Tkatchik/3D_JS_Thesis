@@ -1,12 +1,12 @@
 const moreBtn = () => {
-    let moreBtn = document.querySelector('.add-sentence-btn');
+    let moreBtn = document.querySelector('.sentence');
     moreBtn.addEventListener('click', (event) => {
 
         let target = event.target;
 
-        if (target === moreBtn) {
+        if (target.matches('.add-sentence-btn')) {
             const shadowBlock = document.querySelectorAll('.shadow-block');
-            shadowBlock.style.display = 'show';
+            shadowBlock.style.display = 'block';
         };
     });
 };
