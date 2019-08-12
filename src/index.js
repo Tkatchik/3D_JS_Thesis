@@ -1,5 +1,13 @@
 'use strict';
 
+import "@babel/polyfill";
+import 'nodelist-foreach-polyfill';
+import elementClosest from 'element-closest';
+elementClosest(window);
+import 'formdata-polyfill';
+import 'es6-promise';
+import 'fetch-polyfill';
+
 import popupConsult from './modules/popupConsultForm';
 import validationPhone from './modules/validationPhone';
 import sendForm from './modules/sendAllForms';
