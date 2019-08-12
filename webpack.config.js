@@ -12,12 +12,12 @@ module.exports = {
     },
     devServer: {
         overlay: true
-    }
+    },
     module: {
         rules: [{
             test: /\.js$/,
             loader: 'babel-loader',
             exclude: '/node_modules/'
         }]
-    }
+    },
 };
