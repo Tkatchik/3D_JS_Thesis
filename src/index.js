@@ -16,6 +16,8 @@ import popupCall from './modules/popupCall';
 import popupCheck from './modules/popupCheck';
 import moreBtn from './modules/moreBtn';
 import accordion from './modules/accordion';
+import construct from './modules/construct';
+
 
 
 popupConsult();
@@ -26,3 +28,4 @@ popupCall();
 popupCheck();
 moreBtn();
 accordion();
+construct();

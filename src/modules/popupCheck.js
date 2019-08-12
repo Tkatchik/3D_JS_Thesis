@@ -21,9 +21,8 @@ const popupCheck = () => {
                 if (target.matches('.popup-close')) {
                     popupCheck.style.display = 'none';
                     statusMess();
-                } else if (target.matches('.popup-check:not(.popup-content)')) {
+                } else if (target.matches('.popup-check')) {
                     popupCheck.style.display = 'none';
-                    statusMess();
                 }
             });
         }

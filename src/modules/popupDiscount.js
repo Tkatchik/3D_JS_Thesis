@@ -21,9 +21,8 @@ const popupDiscount = () => {
                 if (target.matches('.popup-close')) {
                     popup.style.display = 'none';
                     statusMess();
-                } else if (target.matches('.popup-discount:not(.popup-content)')) {
+                } else if (target.matches('.popup-discount')) {
                     popup.style.display = 'none';
-                    statusMess();
                 }
             });
         }

@@ -26,8 +26,7 @@ const popupConsult = () => {
                     statusMess();
                     popupConsult.style.display = 'none';
 
-                } else if (target.matches(".popup-consultation:not(#popup-consult)")) {
-                    statusMess();
+                } else if (target.matches('.popup-consultation')) {
                     popupConsult.style.display = 'none';
                 }
             });
