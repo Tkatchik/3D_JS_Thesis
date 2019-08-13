@@ -1,8 +1,8 @@
 const accordion = () => {
 
     const accordionTwo = document.getElementById('accordion-two'),
-        panelHeading = document.querySelectorAll('.panel-heading'),
-        panelCollapse = document.querySelectorAll('.panel-collapse');
+        panelHeading = accordionTwo.querySelectorAll('.panel-heading'),
+        panelCollapse = accordionTwo.querySelectorAll('.panel-collapse');
 
     const togglePanelCollapse = (index) => {
         for (let i = 0; i < panelCollapse.length; i++) {
