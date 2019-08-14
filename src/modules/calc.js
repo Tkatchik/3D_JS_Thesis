@@ -72,6 +72,13 @@ const calc = () => {
             typeSeptic.setAttribute("value", "1 камерный");
         } else {
             typeSeptic.setAttribute("value", "2 камерный");
+
+            let selDiam2 = selectDiametrTwo.options[selectDiametrTwo.selectedIndex];
+            secondWell.setAttribute("value", selDiam2.text)
+
+            let selWellCount2 = secondWellCoutTwo.options[secondWellCoutTwo.selectedIndex];
+            secondWellTwo.setAttribute("value", selWellCount2.text)
+
         }
 
         if (myOnOffSwitchTwo.checked) {
@@ -85,12 +92,6 @@ const calc = () => {
 
         let selWellCount = selectWellCout.options[selectWellCout.selectedIndex];
         firstWellTwo.setAttribute("value", selWellCount.text)
-
-        let selDiam2 = selectDiametrTwo.options[selectDiametrTwo.selectedIndex];
-        secondWell.setAttribute("value", selDiam2.text)
-
-        let selWellCount2 = secondWellCoutTwo.options[secondWellCoutTwo.selectedIndex];
-        secondWellTwo.setAttribute("value", selWellCount2.text)
 
         let result_septic = calcResult.value;
         priceSeptic.setAttribute("value", result_septic);
