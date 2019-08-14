@@ -15,6 +15,7 @@ const accordion = () => {
     };
 
     accordionTwo.addEventListener('click', (event) => {
+        event.preventDefault();
         let target = event.target;
         target = target.closest('.panel-heading');
         if (target) {
