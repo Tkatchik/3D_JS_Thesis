@@ -27,25 +27,25 @@ const calc = () => {
         priceSeptic = document.querySelector("#price_septik"),
         collapseBtn = document.querySelector('#collapseFour button');
 
-    //расчёт парамеров в конструкторе
-    secondObject.style.display = "none"; //скрытые параметры второго колодца, на случай, если его не выберут
+    //calc data in constructor
+    secondObject.style.display = "none"; //hidden data - second well
     checkbox[1].checked = false;
 
-    let result = 0; //переменная, в которую будут записываться вычисления
+    let result = 0; //calc data
 
-    constructor.addEventListener('change', () => { //вычисления помещены в блок конструктора
+    constructor.addEventListener('change', () => { //calc data - constructor block
 
         if (checkbox[0].checked) {
             secondObject.style.display = "none";
-            result = 10000; // если выбрали только однокамерный септик, то второй будет скрыт вместе с его данными
-            //цена однокамерного - 10000
+            result = 10000; // if the single type was choosen, the second well is hidden
+            //single price - 10000
             let options = document.querySelectorAll('.form-control-2 option');
             for (let i = 0, l = options.length; i < l; i++) {
                 options[i].selected = options[i].defaultSelected;
-            } // выбранные опции "диаметр, кол-во колец" у колодцев
+            } // options
         } else {
             secondObject.style.display = "block";
-            result = 15000; //если выбрали двухкамерный септик, его цена 15.000, и он отображается
+            result = 15000; //double object
         }
 
         formControl.forEach((elem) => {
@@ -55,16 +55,16 @@ const calc = () => {
 
         if (checkbox[0].checked) {
             if (checkbox[1].checked) result += 1000;
-            else result; //наличие днища. в однокамерном = +1000
+            else result; //low. price in single object= +1000
         } else {
             if (checkbox[1].checked) result += 2000;
-            else result; //в двухкамерном = +2000
+            else result; //in double object = +2000
         }
 
-        calcResult.value = result; //записываем итоги в переменную result
+        calcResult.value = result; //results
     });
 
-    //передача данных в форму
+    //send data to form
 
     body.addEventListener('change', () => {
 
