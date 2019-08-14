@@ -20,7 +20,7 @@ const popupCall = () => {
                 if (target.matches('.popup-close')) {
                     popup.style.display = 'none';
                     statusMess();
-                } else if (target.matches('.popup-discount')) {
+                } else if (target.matches('.popup-call')) {
                     popup.style.display = 'none';
 
                 }

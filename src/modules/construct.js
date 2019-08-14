@@ -13,10 +13,14 @@ const construct = () => {
         });
 
         constructBtn[i].addEventListener('click', () => {
-            panelCollapse.forEach((elem) => {
-                elem.classList.remove('in');
-            });
-            panelCollapse[i + 1].classList.add('in');
+
+            if (i !== 3) {
+                panelCollapse.forEach((elem) => {
+                    elem.classList.remove('in');
+                });
+                panelCollapse[i + 1].classList.add('in');
+
+            }
         });
     };
 

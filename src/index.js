@@ -17,8 +17,8 @@ import popupCheck from './modules/popupCheck';
 import moreBtn from './modules/moreBtn';
 import accordion from './modules/accordion';
 import construct from './modules/construct';
-
-
+import calc from "./modules/calc";
+import calcModal from "./modules/calcModal";
 
 popupConsult();
 validationPhone();
@@ -29,3 +29,5 @@ popupCheck();
 moreBtn();
 accordion();
 construct();
+calc();
+calcModal();
